@@ -1,0 +1,200 @@
+<h4 class="title">Usuarios</h4>
+
+ <div class="container col-lg-10 tabla3 ">
+   <div class="card">
+     <div class="card-header color">Filtros </div>
+       <!-- <form [formGroup]="myform" (ngSubmit)="filter()"> -->
+       <div class="container-fluid">
+
+        <div class="container-fluid">
+            <div class="row ">
+    
+              <div class="col-6 ">
+                <div class="row">
+                 <label class="filep" for="sel1" >Buscar</label> 
+              
+                  <div class="col-md-8">
+                    <div class="form-group">
+                      <input type="text" class="form-control filepb" placeholder="Legajo" >
+                   
+                    </div>
+                  </div>
+               </div>
+              </div>
+            </div>
+          </div>     
+ 
+      </div>
+    <!-- </form> -->
+    </div>
+  
+  </div>
+
+  <div class="container col-1 invisible">vacio</div>
+
+  <div class="container col-sm-10 col-lg-10 rounded header scroll ">
+    <!-- *ngIf="show" -->
+
+    <table class="table   mb-0  ">
+       <thead class="color border ">
+        <tr>
+          <th class="colum1 colum-pad">Legajo</th>
+          <th class="colum1">Usuario</th>
+          <th class="colum1 colum-pad2">Perfil</th>
+       
+          
+        </tr>
+      </thead> 
+      
+      </table>
+   
+  </div>
+  
+ <div class="container col-sm-10 col-lg-10 rounded tabla scroll " >
+  <!-- *ngIf="show" -->
+
+  <table class="table table-bordered  mb-0">
+    <tbody >
+
+        <tbody>
+           
+            <tr>
+              <td class="colum">L0697451</td>
+              <td class="colum">Cristian,Perez</td>
+              <td class="colum">Operador</td>
+            
+            
+            </tr>
+            <tr>
+              <td class="colum" >L0697451</td>
+              <td class="colum">Cristian,Perez</td>
+              <td class="colum"> Supervisor</td>
+            
+            
+            </tr>
+            <tr>
+              <td class="colum" >L0693221</td>
+              <td class="colum">Nuria,Oliveira</td>
+              <td class="colum">Operador</td>
+             
+             
+            </tr>
+            <tr>
+              <td class="colum" >L0697451</td>
+              <td class="colum">Agustin Noli</td>
+              <td class="colum">Supervisor</td>
+            
+           
+            </tr>
+            <tr>
+              <td class="colum" >L0697451</td>
+              <td class="colum">Cristian,Perez</td>
+              <td class="colum">Supervisor</td>
+             
+           
+            </tr>
+            <tr>
+              <td class="colum" >L0697451</td>
+              <td class="colum">Cristian,Perez</td>
+              <td class="colum">Supervisor</td>
+             
+             
+            </tr>
+         
+      <!-- <tr  *ngFor="let reportes of reportes" > -->
+        <!-- <td class="colum">{{reportes.periodo}}</td>
+        <td class="colum">{{reportes.empresas}}</td>
+        <td class="colum">{{reportes.contraparte}}</td>
+        <td class="colum">{{reportes.rubro}}</td>
+        <td class="colum">{{reportes.saldo}}</td>
+        <td class="colum">{{reportes.saldopromedio}}</td> 
+        <td class="colum">{{reportes.gemp_id}}</td> 
+        <td class="colum">{{reportes.emp_porcentaje}}</td> 
+        <td class="colum">{{reportes.moneda}}</td>  -->
+
+    </tbody>
+  </table>
+
+ </div>
+
+
+<div class="container col-1 invisible">vacio</div>
+<div class="container col-lg-10 tabla3 " >
+   
+  <div class="card">
+  
+        
+        
+      
+    
+    <div class="col-10 ">
+      <!-- <form [formGroup]="mygrid" (ngSubmit)="Importar()"> -->
+            <!--(click)="Importar()"  -->
+      <!-- <button type="button"  
+          class="btn btn-outline-secondary btn-sm col-xs-2 btn-primary-spacing filepb" data-toggle="modal" data-target="#exampleModalLong">
+          <span class="fas fa-plus-circle" aria-hidden="true"></span> Agregar
+        </button> -->
+        <button type="button"  class="btn btn-outline-secondary btn-sm col-xs-2 btn-primary-spacing filep"data-toggle="modal" data-target="#elimina" >
+            <span class="fas fa-plus-circle" aria-hidden="true"></span> Agregar 
+        </button>
+        <button type="button"  class="btn btn-outline-secondary btn-sm col-xs-2 btn-primary-spacing filep"data-toggle="modal" data-target="#exampleModalLong" >
+          <span class="fas fa-trash" aria-hidden="true"></span> Eliminar 
+      </button>
+      <button type="button"  class="btn btn-outline-secondary btn-sm col-xs-2 btn-primary-spacing filep"data-toggle="modal" data-target="#exampleModalLong" >
+        <span class="fas fa-edit" aria-hidden="true"></span> Modificar 
+    </button>
+
+      <!-- </form> -->
+    </div>
+
+  </div>
+  <div class="container col-1 invisible">vacio</div>
+</div>
+
+
+<div class="container col-1 invisible">vacio</div>
+
+
+
+
+<div class="modal fade" id="elimina" tabindex="-1" role="dialog" aria-labelledby="eliminatitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header color">
+        <h5 class="modal-title" id="eliminatitle">Nuevo </h5>
+      
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-md-4 top">  <label for="sel1" >Legajo</label> </div>
+          <div class="col-md-8 top">  <input type="text" class="form-control "  ></div>
+        </div>
+        <div class="container col-1 invisible">vacio</div>
+        <div class="row">
+          <div class="col-md-4 top">  <label for="sel1" >Usuario</label> </div>
+          <div class="col-md-8 top">  <input type="text" class="form-control "  ></div>
+        </div>
+        <div class="container col-1 invisible">vacio</div>
+        <div class="row">
+          <div class="col-md-4 top">  <label for="sel1" >Perfil</label> </div>
+          <div class="col-md-8 top"> 
+            <select class="form-control filepb" id="sel1">
+              <option>Seleccionar...</option>
+              <option>Operador</option>
+              <option>Supervisor</option>
+             
+            </select>
+          </div>
+        </div>
+        <div class="container col-1 invisible">vacio</div>
+      <div class="modal-footer to p  ">
+        <button type="button" class="btn btn-outline-secondary btn-sm  btn-primary-spacing filep" data-dismiss="modal">
+          <span  class="fa fa-window-close" aria-hidden="true"></span>  Cerrar
+        </button>
+        <button type="button" class="btn btn-outline-secondary btn-sm  btn-primary-spacing filep">
+          <span  class="fa fa-check-square" aria-hidden="true"></span>  Confirmar
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

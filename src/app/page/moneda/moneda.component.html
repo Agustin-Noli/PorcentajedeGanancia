@@ -1,0 +1,80 @@
+<!-- <h4 class="title">Fruty</h4>    -->
+  <br>
+<div class="container col-lg-10 tabla3 ">
+  <div class="card">
+    <div class="card-header color">Calcular costos </div>
+      <div class="container-fluid">
+        <div class="modal-body">
+           <div class="row">
+            <div class="col-md-4 top">  <label for="sel1" >Costo</label> </div>
+            <div class="col-md-8 top">  
+              <input type="number"  [(ngModel)]="costo"  class="form-control filepb"  (focusout)="calculoCosto()">
+            </div>
+          </div>
+
+         <div class="row">
+          <div class="col-md-4 top">  <label for="sel1" >Porcentaje</label> </div>
+          <div class="col-md-8 top">  
+            <input type="number" [(ngModel)]="porcentaje" class="form-control filepb"  (focusout)="calculoPorcentaje()"  >
+          </div>
+        </div>
+         <div class="row">
+          <div class="col-md-4 top">  <label for="sel1" >Precio Venta</label> </div>
+          <div class="col-md-8 top">  
+            <input type="number" [(ngModel)]="total"  class="form-control filepb"  >
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 top">  <label for="sel1" >Ganancia Limpia</label> </div>
+          <div class="col-md-8 top">  
+            <input type="number" [(ngModel)]="totalGanancia"  class="form-control filepb"  >
+          </div>
+        </div>
+        <br>
+      </div>
+        </div>
+      </div>     
+
+  <div class="container col-1 invisible">vacio</div>
+</div>
+
+
+<div class="container col-1 invisible">vacio</div>
+
+<div class="container col-lg-10 tabla3 ">
+  <div class="card">
+    <div class="card-header color">Calcular Descuentos </div>
+      <div class="container-fluid">
+        <div class="modal-body">
+           <div class="row">
+            <div class="col-md-4 top">  <label for="sel1" >Precio Final</label> </div>
+            <div class="col-md-8 top">  
+              <input type="number"  [(ngModel)]="precioFinal"  class="form-control filepb"  (focusout)="calculoPrecioFinal()">
+            </div>
+          </div>
+
+         <div class="row">
+          <div class="col-md-4 top">  <label for="sel1" >Porcentaje</label> </div>
+          <div class="col-md-8 top">  
+            <input type="number" [(ngModel)]="porcentajeDos" class="form-control filepb"  (focusout)="calculoPorcentajeDos()"  >
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 top">  <label for="sel1" >Descuento</label> </div>
+          <div class="col-md-8 top">  
+            <input type="number" [(ngModel)]="descuento" class="form-control filepb"   >
+          </div>
+        </div>
+         <div class="row">
+          <div class="col-md-4 top">  <label for="sel1" >Ganancia</label> </div>
+          <div class="col-md-8 top">  
+            <input type="number" [(ngModel)]="ganancia"  class="form-control filepb"  >
+          </div>
+        </div>
+        <br>
+      </div>
+        </div>
+      </div>     
+
+  <div class="container col-1 invisible">vacio</div>
+</div>

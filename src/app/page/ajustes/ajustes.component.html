@@ -1,0 +1,272 @@
+
+<h4 class="title">Ajustes</h4>     
+<!-- <div class="container col-lg-10 rounded tabla" >
+     
+<div class="table-wrapper-scroll-y my-custom-scrollbar">
+
+    <table class="table table-bordered  mb-0">
+      <thead class="color border"> 
+        <tr>
+          <th scope="col">Periodo</th>
+          <th scope="col">Empresa</th>
+          <th scope="col">Rubro</th>
+          <th scope="col">Contraparte</th>
+          <th scope="col">Saldo</th>
+          <th scope="col">Saldo Promedio  </th>
+             
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let proceso of proceso ">
+          <th>{{proceso.id}}</th>
+          <td>{{proceso.grupo1}}</td>
+          <td>{{proceso.grupo2}}</td>
+          <td>{{proceso.grupo3}}</td>
+          <td>{{proceso.importada}}</td> 
+               
+          <tr>
+            <td class="colum" >202007</td>
+            <td class="colum">Banco Galicia</td>
+            <td class="colum">0000100000</td>
+            <td class="colum">	Banco</td>
+            <td class="colum">100000</td>
+            <td class="colum">100%</td>
+          </tr>
+          <tr>
+            <td class="colum" >202007</td>
+            <td class="colum">Banco Galicia</td>
+            <td class="colum">0000100000</td>
+            <td class="colum">	Banco</td>
+            <td class="colum">100000</td>
+            <td class="colum">100%</td>
+          </tr>
+          <tr>
+            <td class="colum" >202007</td>
+            <td class="colum">Banco Galicia</td>
+            <td class="colum">0000100000</td>
+            <td class="colum">	Banco</td>
+            <td class="colum">100000</td>
+            <td class="colum">100%</td>
+          </tr>
+          <tr>
+            <td class="colum" >202007</td>
+            <td class="colum">Banco Galicia</td>
+            <td class="colum">0000100000</td>
+            <td class="colum">	Banco</td>
+            <td class="colum">100000</td>
+            <td class="colum">100%</td>
+          </tr>
+          <tr>
+            <td class="colum" >202007</td>
+            <td class="colum">Banco Galicia</td>
+            <td class="colum">0000100000</td>
+            <td class="colum">	Banco</td>
+            <td class="colum">100000</td>
+            <td class="colum">100%</td>
+          </tr>
+          <tr>
+            <td class="colum" >202007</td>
+            <td class="colum">Banco Galicia</td>
+            <td class="colum">0000100000</td>
+            <td class="colum">	Banco</td>
+            <td class="colum">100000</td>
+            <td class="colum">100%</td>
+          </tr>
+      </tbody>
+    </table>
+    
+  </div>
+
+</div> -->
+
+<div class="container col-sm-10 col-lg-10 rounded header scroll ">
+  <!-- *ngIf="show" -->
+
+  <table class="table   mb-0  ">
+     <thead class="color border ">
+      <tr>
+        <th class="colum1">Empresa</th>
+        <th class="colum1">Periodo</th>
+        <th class="colum1">Rubro</th>
+        <th class="colum1">Contraparte</th>
+        <th class="colum1">Saldo</th>
+        <th class="colum1">Saldo Promedio</th>
+        
+      </tr>
+    </thead> 
+    
+    </table>
+ 
+</div>
+
+<div class="container col-sm-10 col-lg-10 rounded tabla scroll " >
+<!-- *ngIf="show" -->
+
+<table class="table table-bordered  mb-0">
+  <tbody >
+
+      <tbody>
+     
+          <tr>
+            <td class="colum">Galicia Seguros</td>
+            <td class="colum">202008</td>
+            <td class="colum">111002111</td>
+            <td class="colum">Banco</td>
+            <td class="colum">-10000</td>
+            <td class="colum">100%</td>
+          
+          </tr>
+          <tr>
+            <td class="colum">Galicia Seguros</td>
+            <td class="colum">202008</td>
+            <td class="colum">111002111</td>
+            <td class="colum">Banco</td>
+            <td class="colum">-10000</td>
+            <td class="colum">100%</td>
+          
+          
+          <tr>
+            <td class="colum">Galicia Seguros</td>
+            <td class="colum">202008</td>
+            <td class="colum">111002111</td>
+            <td class="colum">Banco</td>
+            <td class="colum">-10000</td>
+            <td class="colum">100%</td>
+           
+            
+          </tr>
+        
+       
+    <!-- <tr  *ngFor="let reportes of reportes" > -->
+      <!-- <td class="colum">{{reportes.periodo}}</td>
+      <td class="colum">{{reportes.empresas}}</td>
+      <td class="colum">{{reportes.contraparte}}</td>
+      <td class="colum">{{reportes.rubro}}</td>
+      <td class="colum">{{reportes.saldo}}</td>
+      <td class="colum">{{reportes.saldopromedio}}</td> 
+      <td class="colum">{{reportes.gemp_id}}</td> 
+      <td class="colum">{{reportes.emp_porcentaje}}</td> 
+      <td class="colum">{{reportes.moneda}}</td>  -->
+
+  </tbody>
+</table>
+
+</div>
+
+<div class="container col-1 invisible">vacio</div>
+
+    <div class="container col-lg-10 tabla2 ">
+    <div class="card">
+        <!-- <div class="card-header color">Acciones  </div> -->
+       
+       
+        <div class="card-body">
+          <form [formGroup]="myfilter" (ngSubmit)="filter()">
+            <div class="container-fluid">
+             
+            </div>
+          </form>       
+               
+            <div class="col-10 ">
+
+              <a  class="btn btn-outline-secondary ba btn-sm col-xs-2 btn-primary-spacing  "
+              [routerLink] = "'/Procesos'"> <span class="fa fa-arrow-left" aria-hidden="true"></span>
+              </a>
+
+              <!-- <form [formGroup]="mygrid" (ngSubmit)="Importar()"> -->
+            <!-- </form> -->
+       
+            <button type="button"  class="btn btn-outline-secondary btn-sm col-xs-2 btn-primary-spacing"data-toggle="modal" data-target="#exampleModalLong" >
+                <span class="fas fa-plus-circle" aria-hidden="true"></span> Agregar 
+            </button>
+            <button type="button"  class="btn btn-outline-secondary btn-sm col-xs-2 btn-primary-spacing"data-toggle="modal" data-target="#exampleModalLong" >
+              <span class="fas fa-trash" aria-hidden="true"></span> Eliminar 
+          </button>
+          <button type="button"  class="btn btn-outline-secondary btn-sm col-xs-2 btn-primary-spacing"data-toggle="modal" data-target="#exampleModalLong" >
+            <span class="fas fa-edit" aria-hidden="true"></span> Modificar 
+        </button>
+           
+
+        </div>
+     
+        </div>
+      </div>
+      <div class="container col-1 invisible">vacio</div>
+    </div>  
+
+
+<!-- -------- prueba modal  -->
+
+<!-- 
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
+    Launch demo modal
+  </button> -->
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header color">
+          <h5 class="modal-title" id="exampleModalLongTitle">Detalle</h5>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-md-4 top">  <label for="sel1" >Periodo</label> </div>
+            <div class="col-md-8 top">  
+              <input type="month" class="form-control filepb" min="2020-03" value="2020-06">
+            </div>
+          </div>
+          <div class="container col-1 invisible">vacio</div>
+          <div class="row">
+            <div class="col-md-4 top"> <label for="sel1" >Empresa </label> </div>
+            <div class="col-md-8 top">  
+              <select class="form-control filepb" id="sel1">
+                <option>Seleccionar...</option>
+                <option>Banco Naranja</option>
+                <option>Galicia Seguros</option>
+                <option>Banco interco</option>
+              </select>
+            </div>
+          </div>
+          <div class="container col-1 invisible">vacio</div>
+          <div class="row">
+            <div class="col-md-4 top ">  <label for="sel1" >Rubro</label> </div>
+            <div class="col-md-8 top">  <select class="form-control filepb" id="sel1">
+              <option>Seleccionar...</option>
+              <option>Banco Naranja</option>
+              <option>Galicia Seguros</option>
+              <option>Banco interco</option>
+            </select></div>
+          </div>
+          <div class="container col-1 invisible">vacio</div>
+          <div class="row">
+            <div class="col-md-4 top">  <label for="sel1" >Contraparte </label> </div>
+            <div class="col-md-8 top">  <select class="form-control filepb" id="sel1">
+              <option>Seleccionar...</option>
+              <option>Banco Naranja</option>
+              <option>Galicia Seguros</option>
+              <option>Banco interco</option>
+            </select></div>
+          </div>
+          <div class="container col-1 invisible">vacio</div>
+          <div class="row">
+            <div class="col-md-4 top">  <label for="sel1" >Saldo </label> </div>
+            <div class="col-md-8 top">  <input type="text" class="form-control "  ></div>
+          </div>
+          <div class="container col-1 invisible">vacio</div>
+          <div class="row">
+            <div class="col-md-4 top">  <label for="sel1" >Saldo Promedio </label> </div>
+            <div class="col-md-8 top">  <input type="text" class="form-control "  ></div>
+          </div>
+          <div class="container col-1 invisible">vacio</div>
+        <div class="modal-footer to p  ">
+          <button type="button" class="btn btn-outline-secondary btn-sm  btn-primary-spacing filep" data-dismiss="modal">
+            <span  class="fa fa-window-close" aria-hidden="true"></span>  Cerrar
+          </button>
+          <button type="button" class="btn btn-outline-secondary btn-sm  btn-primary-spacing filep">
+            <span  class="fa fa-check-square" aria-hidden="true"></span>  Confirmar
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
